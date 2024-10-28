@@ -253,9 +253,15 @@ override_whitelisted_methods = {
 
 fixtures = [
     {
-        "dt": "Workflow",  # The doctype name
-        "filters": [
-            ["name", "in", ["Timesheet Workflow"]]
-        ]
+        "dt": "Workflow",
+        "filters": [["name", "in", ["Timesheet Workflow"]]]
+    },
+    {
+        "dt": "Workflow State",
+        "filters": [["workflow_name", "in", ["Timesheet Workflow"]]]
+    },
+    {
+        "dt": "Workflow Action",
+        "filters": [["workflow_name", "in", ["Timesheet Workflow"]]]
     }
 ]
